@@ -1,0 +1,118 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css');
+/* @import url('https://code.jquery.com/jquery-3.2.1.slim.min.js');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js'); */
+
+body {
+  background-color: #f4f7f8;
+}
+
+
+header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 40px;
+}
+
+.navbar {
+  margin: 2rem 0 2.5rem 0;
+}
+
+.my-navbar {
+  align-items: center;
+  background: #81ba00;
+  display: flex;
+  height: 7rem;
+  justify-content: space-between;
+  padding: 0 1%;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.my-navbar-brand {
+  font-size: 38px;
+  font-family: 'impact';
+  color: white;
+}
+
+.btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.partspec {
+  margin-left: 1rem;
+}
+
+input[type=radio]  {
+  margin-left: 0.5rem;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-left: 5px;
+}
+
+h5 {
+  margin-bottom: 2px;
+}
+
+.specdetail {
+  margin-top: 0.5rem;
+}
+
+label {
+  font-size: 0.7rem;
+}
+
+.dropdown{
+  margin-top: 120px;
+}
+
+.panel{
+  box-shadow: 2px 2px 4px gray;
+}
+
+.panel-heading{
+  margin-top: 120px;
+}
+
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 190px;
+  margin-top: 20px;
+  margin-left: 40px;
+  background-color: white;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.box:hover{
+    background: #f4f7f8;
+}
+
+.panel_search{
+  box-shadow: 2px 2px 4px gray;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.paginate{
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.pagination{
+  margin-bottom: 5px;
+}
+
+.box_p{
+  margin-left: 5px;
+}
