@@ -11,7 +11,7 @@
 |
 */
 // 検索初画面
-Route::get('/main', 'SerchController@main')->name('categories.main');
+Route::get('/', 'SerchController@main')->name('categories.main');
 
 // 検索ボタン実行後画面の表示と検索条件の表示
-Route::get('result/{id}','SerchController@result')->name('results.result');
+Route::get('/result/{id}','SerchController@result')->name('results.result');

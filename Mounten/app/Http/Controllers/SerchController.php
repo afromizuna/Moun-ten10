@@ -37,13 +37,13 @@ class SerchController extends Controller
       $spec = Spec::where('category_id', $current_category_id->id)->get();
       // $res = $request->all();
 
-      $handlebar_results = Serch_result_handlebar::paginate(12);
-      $grip_results = Serch_result_grip::paginate(12);
-      $stem_results = Serch_result_stem::paginate(12);
-      $sadlle_results = Serch_result_sadlle::paginate(12);
-      $seatpost_results = Serch_result_seatpost::paginate(12);
-      $pedal_results = Serch_result_pedal::paginate(12);
-      $crank_results = Serch_result_crank::paginate(12);
+      $handlebar_results = Serch_result_handlebar::paginate(9);
+      $grip_results = Serch_result_grip::paginate(9);
+      $stem_results = Serch_result_stem::paginate(9);
+      $sadlle_results = Serch_result_sadlle::paginate(9);
+      $seatpost_results = Serch_result_seatpost::paginate(9);
+      $pedal_results = Serch_result_pedal::paginate(9);
+      $crank_results = Serch_result_crank::paginate(9);
 
       return view('results/result',[
         'categories' => $categories,
