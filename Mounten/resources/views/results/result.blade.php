@@ -136,26 +136,27 @@
                                             {{ $sadlle_results->links() }}
                                           </div>
 
-                                          @elseif ($current_category_id === 5)
+                                        @elseif ($current_category_id === 5)
+                                          <div class="paginate">
+                                            {{ $seatpost_results->links() }}
+                                          </div>
+                                            <div class="wrap">
+                                                @foreach($seatpost_results as $product)
+                                                  <div class="box">
+                                                      <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                      <img alt="a" title="a" src="{{$product->image_url}}">
+                                                      <p class="box_p">{{$product->name}}</p>
+                                                      <p class="box_p">Price：{{$product->price}}</p>
+                                                      </a>
+                                                  </div>
+                                                @endforeach
+                                              </div>
                                             <div class="paginate">
                                               {{ $current_part_name->part_name}}　検索結果　:　{{ $seatpost_results->total() }}　件
                                               {{ $seatpost_results->links() }}
                                             </div>
-                                              <div class="wrap">
-                                                  @foreach($seatpost_results as $product)
-                                                    <div class="box">
-                                                        <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                                        <img alt="a" title="a" src="{{$product->image_url}}">
-                                                        <p class="box_p">{{$product->name}}</p>
-                                                        <p class="box_p">Price：{{$product->price}}</p>
-                                                        </a>
-                                                    </div>
-                                                  @endforeach
-                                                </div>
-                                              <div class="paginate">
-                                                {{ $seatpost_results->links() }}
-                                              </div>
 
+<<<<<<< HEAD
                                               @elseif ($current_category_id === 6)
                                                 <div class="paginate">
                                                   {{ $current_part_name->part_name}}　検索結果　:　{{ $pedal_results->total() }}　件
@@ -174,8 +175,28 @@
                                                     </div>
                                                   <div class="paginate">
                                                     {{ $pedal_results->links() }}
+=======
+                                        @elseif ($current_category_id === 6)
+                                          <div class="paginate">
+                                            {{ $pedal_results->links() }}
+                                          </div>
+                                            <div class="wrap">
+                                                @foreach($pedal_results as $product)
+                                                  <div class="box">
+                                                      <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                      <img alt="a" title="a" src="{{$product->image_url}}">
+                                                      <p class="box_p">{{$product->name}}</p>
+                                                      <p class="box_p">Price：{{$product->price}}</p>
+                                                      </a>
+>>>>>>> f41b519c1402d6171c446a9d36c64d4302555367
                                                   </div>
+                                                @endforeach
+                                              </div>
+                                            <div class="paginate">
+                                              {{ $pedal_results->links() }}
+                                            </div>
 
+<<<<<<< HEAD
                                                   @elseif ($current_category_id === 7)
                                                     <div class="paginate">
                                                       {{ $current_part_name->part_name}}　検索結果　:　{{ $crank_results->total() }}　件
@@ -195,6 +216,26 @@
                                                       <div class="paginate">
                                                         {{ $crank_results->links() }}
                                                       </div>
+=======
+                                        @elseif ($current_category_id === 7)
+                                          <div class="paginate">
+                                            {{ $crank_results->links() }}
+                                          </div>
+                                            <div class="wrap">
+                                                @foreach($crank_results as $product)
+                                                  <div class="box">
+                                                      <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                      <img alt="a" title="a" src="{{$product->image_url}}">
+                                                      <p class="box_p">{{$product->name}}</p>
+                                                      <p class="box_p">Price：{{$product->price}}</p>
+                                                      </a>
+                                                  </div>
+                                                @endforeach
+                                              </div>
+                                            <div class="paginate">
+                                              {{ $crank_results->links() }}
+                                            </div>
+>>>>>>> f41b519c1402d6171c446a9d36c64d4302555367
                           @endif
                 </div>
             </div>
