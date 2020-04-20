@@ -56,114 +56,13 @@
                 <div class="panel_search">
                     <!-- <div class="panel-heading"><h6>results</h6></div> -->
 
-                          @if ($current_category_id === 1)
-                            <div class="paginate">
-                              {{ $current_part_name->part_name}}　検索結果　:　{{ $handlebar_results->total() }}　件
-                              {{ $handlebar_results->links() }}
-                            </div>
-                              <div class="wrap">
-                                  @foreach($handlebar_results as $product)
-                                    <div class="box">
-                                        <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                        <img alt="a" title="a" src="{{$product->image_url}}">
-                                        <p class="box_p">{{$product->name}}</p>
-                                        <p class="box_p">Price：{{$product->price}}</p>
-                                        </a>
-                                    </div>
-                                  @endforeach
-                              </div>
-                            <div class="paginate">
-                              {{ $handlebar_results->links() }}
-                            </div>
-
-                              @elseif ($current_category_id === 2)
-                                <div class="paginate">
-                                  {{ $current_part_name->part_name}}　検索結果　:　{{ $grip_results->total() }}　件
-                                  {{ $grip_results->links() }}
-                                </div>
-                                  <div class="wrap">
-                                      @foreach($grip_results as $product)
-                                        <div class="box">
-                                            <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                            <img alt="a" title="a" src="{{$product->image_url}}">
-                                            <p class="box_p">{{$product->name}}</p>
-                                            <p class="box_p">Price：{{$product->price}}</p>
-                                            </a>
-                                        </div>
-                                      @endforeach
-                                    </div>
-                                  <div class="paginate">
-                                    {{ $grip_results->links() }}
-                                  </div>
-
-                                  @elseif ($current_category_id === 3)
-                                    <div class="paginate">
-                                      {{ $current_part_name->part_name}}　検索結果　:　{{ $stem_results->total() }}　件
-                                      {{ $stem_results->links() }}
-                                    </div>
-                                      <div class="wrap">
-                                          @foreach($stem_results as $product)
-                                            <div class="box">
-                                                <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                                <img alt="a" title="a" src="{{$product->image_url}}">
-                                                <p class="box_p">{{$product->name}}</p>
-                                                <p class="box_p">Price：{{$product->price}}</p>
-                                                </a>
-                                            </div>
-                                          @endforeach
-                                        </div>
-                                      <div class="paginate">
-                                        {{ $stem_results->links() }}
-                                      </div>
-
-                                      @elseif ($current_category_id === 4)
-                                        <div class="paginate">
-                                          {{ $current_part_name->part_name}}　検索結果　:　{{ $sadlle_results->total() }}　件
-                                          {{ $sadlle_results->links() }}
-                                        </div>
-                                          <div class="wrap">
-                                              @foreach($sadlle_results as $product)
-                                                <div class="box">
-                                                    <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                                    <img alt="a" title="a" src="{{$product->image_url}}">
-                                                    <p class="box_p">{{$product->name}}</p>
-                                                    <p class="box_p">Price：{{$product->price}}</p>
-                                                    </a>
-                                                </div>
-                                              @endforeach
-                                            </div>
-                                          <div class="paginate">
-                                            {{ $sadlle_results->links() }}
-                                          </div>
-
-                                        @elseif ($current_category_id === 5)
-                                          <div class="paginate">
-                                            {{ $seatpost_results->links() }}
-                                          </div>
-                                            <div class="wrap">
-                                                @foreach($seatpost_results as $product)
-                                                  <div class="box">
-                                                      <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                                      <img alt="a" title="a" src="{{$product->image_url}}">
-                                                      <p class="box_p">{{$product->name}}</p>
-                                                      <p class="box_p">Price：{{$product->price}}</p>
-                                                      </a>
-                                                  </div>
-                                                @endforeach
-                                              </div>
-                                            <div class="paginate">
-                                              {{ $current_part_name->part_name}}　検索結果　:　{{ $seatpost_results->total() }}　件
-                                              {{ $seatpost_results->links() }}
-                                            </div>
-
-<<<<<<< HEAD
-                                              @elseif ($current_category_id === 6)
+                    @if ($current_category_id === 1)
                                                 <div class="paginate">
-                                                  {{ $current_part_name->part_name}}　検索結果　:　{{ $pedal_results->total() }}　件
-                                                  {{ $pedal_results->links() }}
+                                                  {{ $current_part_name->part_name}}　検索結果　:　{{ $handlebar_results->total() }}　件
+                                                  {{ $handlebar_results->links() }}
                                                 </div>
                                                   <div class="wrap">
-                                                      @foreach($pedal_results as $product)
+                                                      @foreach($handlebar_results as $product)
                                                         <div class="box">
                                                             <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
                                                             <img alt="a" title="a" src="{{$product->image_url}}">
@@ -172,38 +71,18 @@
                                                             </a>
                                                         </div>
                                                       @endforeach
-                                                    </div>
-                                                  <div class="paginate">
-                                                    {{ $pedal_results->links() }}
-=======
-                                        @elseif ($current_category_id === 6)
-                                          <div class="paginate">
-                                            {{ $pedal_results->links() }}
-                                          </div>
-                                            <div class="wrap">
-                                                @foreach($pedal_results as $product)
-                                                  <div class="box">
-                                                      <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                                      <img alt="a" title="a" src="{{$product->image_url}}">
-                                                      <p class="box_p">{{$product->name}}</p>
-                                                      <p class="box_p">Price：{{$product->price}}</p>
-                                                      </a>
->>>>>>> f41b519c1402d6171c446a9d36c64d4302555367
                                                   </div>
-                                                @endforeach
-                                              </div>
-                                            <div class="paginate">
-                                              {{ $pedal_results->links() }}
-                                            </div>
+                                                <div class="paginate">
+                                                  {{ $handlebar_results->links() }}
+                                                </div>
 
-<<<<<<< HEAD
-                                                  @elseif ($current_category_id === 7)
+                                                  @elseif ($current_category_id === 2)
                                                     <div class="paginate">
-                                                      {{ $current_part_name->part_name}}　検索結果　:　{{ $crank_results->total() }}　件
-                                                      {{ $crank_results->links() }}
+                                                      {{ $current_part_name->part_name}}　検索結果　:　{{ $grip_results->total() }}　件
+                                                      {{ $grip_results->links() }}
                                                     </div>
                                                       <div class="wrap">
-                                                          @foreach($crank_results as $product)
+                                                          @foreach($grip_results as $product)
                                                             <div class="box">
                                                                 <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
                                                                 <img alt="a" title="a" src="{{$product->image_url}}">
@@ -214,29 +93,142 @@
                                                           @endforeach
                                                         </div>
                                                       <div class="paginate">
-                                                        {{ $crank_results->links() }}
+                                                        {{ $grip_results->links() }}
                                                       </div>
-=======
-                                        @elseif ($current_category_id === 7)
-                                          <div class="paginate">
-                                            {{ $crank_results->links() }}
-                                          </div>
-                                            <div class="wrap">
-                                                @foreach($crank_results as $product)
-                                                  <div class="box">
-                                                      <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
-                                                      <img alt="a" title="a" src="{{$product->image_url}}">
-                                                      <p class="box_p">{{$product->name}}</p>
-                                                      <p class="box_p">Price：{{$product->price}}</p>
-                                                      </a>
-                                                  </div>
-                                                @endforeach
-                                              </div>
-                                            <div class="paginate">
-                                              {{ $crank_results->links() }}
-                                            </div>
->>>>>>> f41b519c1402d6171c446a9d36c64d4302555367
-                          @endif
+
+                                                      @elseif ($current_category_id === 3)
+                                                        <div class="paginate">
+                                                          {{ $current_part_name->part_name}}　検索結果　:　{{ $stem_results->total() }}　件
+                                                          {{ $stem_results->links() }}
+                                                        </div>
+                                                          <div class="wrap">
+                                                              @foreach($stem_results as $product)
+                                                                <div class="box">
+                                                                    <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                                    <img alt="a" title="a" src="{{$product->image_url}}">
+                                                                    <p class="box_p">{{$product->name}}</p>
+                                                                    <p class="box_p">Price：{{$product->price}}</p>
+                                                                    </a>
+                                                                </div>
+                                                              @endforeach
+                                                            </div>
+                                                          <div class="paginate">
+                                                            {{ $stem_results->links() }}
+                                                          </div>
+
+                                                          @elseif ($current_category_id === 4)
+                                                            <div class="paginate">
+                                                              {{ $current_part_name->part_name}}　検索結果　:　{{ $sadlle_results->total() }}　件
+                                                              {{ $sadlle_results->links() }}
+                                                            </div>
+                                                              <div class="wrap">
+                                                                  @foreach($sadlle_results as $product)
+                                                                    <div class="box">
+                                                                        <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                                        <img alt="a" title="a" src="{{$product->image_url}}">
+                                                                        <p class="box_p">{{$product->name}}</p>
+                                                                        <p class="box_p">Price：{{$product->price}}</p>
+                                                                        </a>
+                                                                    </div>
+                                                                  @endforeach
+                                                                </div>
+                                                              <div class="paginate">
+                                                                {{ $sadlle_results->links() }}
+                                                              </div>
+
+                                                            @elseif ($current_category_id === 5)
+                                                              <div class="paginate">
+                                                                {{ $seatpost_results->links() }}
+                                                              </div>
+                                                                <div class="wrap">
+                                                                    @foreach($seatpost_results as $product)
+                                                                      <div class="box">
+                                                                          <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                                          <img alt="a" title="a" src="{{$product->image_url}}">
+                                                                          <p class="box_p">{{$product->name}}</p>
+                                                                          <p class="box_p">Price：{{$product->price}}</p>
+                                                                          </a>
+                                                                      </div>
+                                                                    @endforeach
+                                                                  </div>
+                                                                <div class="paginate">
+                                                                  {{ $current_part_name->part_name}}　検索結果　:　{{ $seatpost_results->total() }}　件
+                                                                  {{ $seatpost_results->links() }}
+                                                                </div>
+                                                                  @elseif ($current_category_id === 6)
+                                                                    <div class="paginate">
+                                                                      {{ $current_part_name->part_name}}　検索結果　:　{{ $pedal_results->total() }}　件
+                                                                      {{ $pedal_results->links() }}
+                                                                    </div>
+                                                                      <div class="wrap">
+                                                                          @foreach($pedal_results as $product)
+                                                                            <div class="box">
+                                                                                <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                                                <img alt="a" title="a" src="{{$product->image_url}}">
+                                                                                <p class="box_p">{{$product->name}}</p>
+                                                                                <p class="box_p">Price：{{$product->price}}</p>
+                                                                                </a>
+                                                                            </div>
+                                                                          @endforeach
+                                                                        </div>
+                                                                      <div class="paginate">
+                                                                        {{ $pedal_results->links() }}
+                                                            @elseif ($current_category_id === 6)
+                                                              <div class="paginate">
+                                                                {{ $pedal_results->links() }}
+                                                              </div>
+                                                                <div class="wrap">
+                                                                    @foreach($pedal_results as $product)
+                                                                      <div class="box">
+                                                                          <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                                          <img alt="a" title="a" src="{{$product->image_url}}">
+                                                                          <p class="box_p">{{$product->name}}</p>
+                                                                          <p class="box_p">Price：{{$product->price}}</p>
+                                                                          </a>
+                                                                      </div>
+                                                                    @endforeach
+                                                                  </div>
+                                                                <div class="paginate">
+                                                                  {{ $pedal_results->links() }}
+                                                                </div>
+                                                                      @elseif ($current_category_id === 7)
+                                                                        <div class="paginate">
+                                                                          {{ $current_part_name->part_name}}　検索結果　:　{{ $crank_results->total() }}　件
+                                                                          {{ $crank_results->links() }}
+                                                                        </div>
+                                                                          <div class="wrap">
+                                                                              @foreach($crank_results as $product)
+                                                                                <div class="box">
+                                                                                    <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                                                    <img alt="a" title="a" src="{{$product->image_url}}">
+                                                                                    <p class="box_p">{{$product->name}}</p>
+                                                                                    <p class="box_p">Price：{{$product->price}}</p>
+                                                                                    </a>
+                                                                                </div>
+                                                                              @endforeach
+                                                                            </div>
+                                                                          <div class="paginate">
+                                                                            {{ $crank_results->links() }}
+                                                                          </div>
+                                                            @elseif ($current_category_id === 7)
+                                                              <div class="paginate">
+                                                                {{ $crank_results->links() }}
+                                                              </div>
+                                                                <div class="wrap">
+                                                                    @foreach($crank_results as $product)
+                                                                      <div class="box">
+                                                                          <a href="https://www.chainreactioncycles.com/{{$product->click_url}}" target="_blank">
+                                                                          <img alt="a" title="a" src="{{$product->image_url}}">
+                                                                          <p class="box_p">{{$product->name}}</p>
+                                                                          <p class="box_p">Price：{{$product->price}}</p>
+                                                                          </a>
+                                                                      </div>
+                                                                    @endforeach
+                                                                  </div>
+                                                                <div class="paginate">
+                                                                  {{ $crank_results->links() }}
+                                                                </div>
+                                              @endif
                 </div>
             </div>
           </div>
